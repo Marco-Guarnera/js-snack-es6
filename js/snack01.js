@@ -1,7 +1,27 @@
 // Snack Array Methods 01
 
 // Fase di preparazione
-// Fase di gestione eventi
-// Fase di raccolta dati
+
+// Variabili
+const tableName = "Tavolo Vip";
+
+// Strutture Dati
+const guestList = ["Brad Pitt", "Johnny Depp", "Lady Gaga", "Cristiano Ronaldo", "Georgina Rodriguez", "Chiara Ferragni", "George Clooney", "Amal Clooney", "Fedez", "Amadeus", "Fiorello"];
+
 // Fase di elaborazione
+
+// Creo la lista
+const placeholderList = guestList.map((element, i) => {
+    // Creo l'elemento della lista
+    const placeholder = {
+        tableName: tableName,
+        guestName: element,
+        place: i
+    }
+    return placeholder;
+});
+
 // Fase di produzione
+
+// Stampo la lista in console
+console.table(placeholderList);
