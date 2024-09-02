@@ -5,21 +5,13 @@
 // Variabili
 const tableName = "Tavolo Vip";
 
-// Strutture Dati
+// Strutture dati
 const guestList = ["Brad Pitt", "Johnny Depp", "Lady Gaga", "Cristiano Ronaldo", "Georgina Rodriguez", "Chiara Ferragni", "George Clooney", "Amal Clooney", "Fedez", "Amadeus", "Fiorello"];
 
 // Fase di elaborazione
 
 // Creo la lista
-const placeholderList = guestList.map((element, i) => {
-    // Creo l'elemento della lista
-    const placeholder = {
-        tableName: tableName,
-        guestName: element,
-        place: i
-    }
-    return placeholder;
-});
+const placeholderList = guestList.map((guest, i) => ({ tableName, guest, place: i + 1 }));
 
 // Fase di produzione
 
