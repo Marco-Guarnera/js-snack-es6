@@ -2,8 +2,8 @@
 
 // Fase di preparazione
 
-// Strutture Dati
-const bikeList = [
+// Strutture dati
+const bikesList = [
     {
         name: "SuperSix Evo 1",
         weight: 5
@@ -22,11 +22,11 @@ const bikeList = [
 
 // Fase di elaborazione
 
-const weightList = bikeList.map(({ weight }) => weight);
+const weightsList = bikesList.map(({ weight }) => weight);
 
-const minWeight = Math.min(...weightList);
+const minWeight = Math.min(...weightsList);
 
-const lighterBike = bikeList.find(({ weight }) => weight === minWeight);
+const lighterBike = bikesList.find(({ weight }) => weight === minWeight);
 
 const { name, weight } = lighterBike;
 
@@ -35,7 +35,7 @@ const result = `La ${name} è la più leggera (Peso: ${weight}kg).`;
 // Fase di produzione
 
 // Stampo la lista
-console.table(bikeList);
+console.table(bikesList);
 
 // Stampo il risultato
 console.log(result);
