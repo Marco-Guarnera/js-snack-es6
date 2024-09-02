@@ -25,14 +25,14 @@ const teamsList = [
 
 // Funzioni
 
-// Funzione da utilizzare per generare numeri casuali da 0 a 100 (escluso)
-const getRandomNumbers = () => Math.floor(Math.random() * 100);
+// Funzione da utilizzare per generare un numero casuale da 0 a 100 (escluso)
+const getRandomNumber = () => Math.floor(Math.random() * 100);
 
 // Fase di elaborazione
 
 teamsList.forEach(team => {
-    team["score"] = getRandomNumbers();
-    team["fail"] = getRandomNumbers();
+    team["score"] = getRandomNumber();
+    team["fail"] = getRandomNumber();
 });
 
 // Creo una nuova lista
