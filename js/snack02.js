@@ -2,8 +2,8 @@
 
 // Fase di preparazione
 
-// Strutture Dati
-const studentList = [
+// Strutture dati
+const studentsList = [
     {
         id: 213,
         name: "Marco della Rovere",
@@ -50,18 +50,18 @@ const studentList = [
 // Fase di elaborazione
 
 // Creo una lista con i nomi degli studenti in maiuscolo
-const studentList01 = studentList.map(element => element["name"].toUpperCase());
+const studentsList01 = studentsList.map(student => student["name"].toUpperCase());
 
 // Creo una lista con gli studenti che hanno un totale di voti superiore a 70 
-const studentList02 = studentList.filter(element => element["grades"] > 70);
+const studentsList02 = studentsList.filter(student => student["grades"] > 70);
 
 // Creo una lista con gli studenti che hanno un totale di voti superiore a 70 e un id superiore a 120
-const studentList03 = studentList.filter(element => element["grades"] > 70 && element["id"] > 120);
+const studentsList03 = studentsList02.filter(student => student["id"] > 120);
 
 // Fase di produzione
 
 // Stampo tutte le liste
-console.table(studentList);
-console.table(studentList01);
-console.table(studentList02);
-console.table(studentList03);
+console.table(studentsList);
+console.table(studentsList01);
+console.table(studentsList02);
+console.table(studentsList03);
